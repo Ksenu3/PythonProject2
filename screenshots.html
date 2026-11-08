@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily | Screenshots</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f1ea;
+            font-family: Arial, sans-serif;
+            color: #161f47;
+        }
+
+        pre {
+            margin-left: 30px;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 33%;
+            height: 400px;
+            object-fit: contain;
+        }
+
+        @media (max-width: 750px) {
+            .gallery {
+                flex-direction: column;
+            }
+
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Font</h2>
+
+    <p>
+        Font is from
+        <a href="https://fonts.google.com/specimen/Monsieur+La+Doulaise">
+            Google Fonts. Name: Monsieur La Doulaise
+        </a>
+    </p>
+
+    <pre><code>@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&amp;display=swap');
+
+.logo {
+    font-family: 'Monsieur La Doulaise', cursive;
+}
+
+.home h1 {
+    font-family: 'Monsieur La Doulaise', cursive;
+}</code></pre>
+
+    <h2>Validation</h2>
+
+    <div class="gallery">
+        <img src="screenshots/validator.jpg"
+             alt="HTML Validator -tarkistuksen tulos">
+    </div>
+
+    <h2>Lighthouse</h2>
+
+    <div class="gallery">
+        <img src="screenshots/lighthouse.jpg"
+             alt="Lighthouse-tarkistuksen tulos">
+    </div>
+
+    <h2>WAVE</h2>
+
+    <div class="gallery">
+        <img src="screenshots/wave.jpg"
+             alt="WAVE-saavutettavuustarkistuksen tulos">
+    </div>
+
+</body>
+</html>
