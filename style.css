@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+
+/* Koko sivun perusasetukset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #161f47;
+    font-family: Arial, sans-serif;
+    color: #161f47;
+}
+
+/* Sivun keskellä oleva alue */
+.container {
+    width: 90%;
+    max-width: 1400px;
+    min-height: 90vh;
+    margin: 25px auto;
+    background-color: #aec5e7;
+}
+
+/* Yläpalkki */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #536788;
+    height: 65px;
+}
+
+/* Lily-logo vasemmalla */
+.logo {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 55px;
+    color: white;
+    background-color: #536788;
+    width: 160px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigointilinkit oikealla */
+nav {
+    display: flex;
+    gap: 60px;
+    padding-right: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #394D73;
+    padding: 10px 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(22, 31, 71, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    transform: translateY(-5px);
+    background-color: #256dd3;
+    box-shadow: 0 8px 15px rgba(22, 31, 71, 0.4);
+}
+
+/* Etusivun sisältö */
+.home {
+    text-align: center;
+    padding: 70px 0 30px;
+}
+
+/* Iso Lily-otsikko kuvan yläpuolella */
+.home h1 {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 20px;
+    color: #161f47;
+}
+
+/* Etusivun kukkakuva */
+.home img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Kuvan alla oleva teksti */
+.home p {
+    max-width: 650px;
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Contact-sivu */
+.contact {
+    padding: 50px;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-info {
+    width: 40%;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.contact-map {
+    width: 60%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(22, 31, 71, 0.25);
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+/* Products-sivu */
+.products-page {
+    padding-bottom: 50px;
+}
+
+/* Iso yläkuva */
+.products-banner {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Esittelyteksti */
+.products-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 35px auto 50px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Kolme tuotetta vierekkäin */
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 40px;
+}
+
+/* Yksittäinen tuote */
+.product {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    background-color: #dce8f8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(22, 31, 71, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(22, 31, 71, 0.35);
+}
+
+.product h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Tuotekuvat */
+.product img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Tuotekuvaukset */
+.product p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.contact-map {
+    transition: transform 0.3s ease;
+}
+
+.contact-map:hover {
+    transform: translateY(-5px);
+}
